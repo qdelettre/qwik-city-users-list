@@ -10,11 +10,11 @@ export const onGet: RequestHandler<User[]> = async () => {
 };
 
 export default component$(() => {
-  const users = useEndpoint<User[]>();
+  const usersResource = useEndpoint<User[]>();
 
   return (
     <Resource
-      value={users}
+      value={usersResource}
       onPending={() => <div aria-busy="true">Loading...</div>}
       onRejected={() => <div>Error</div>}
       onResolved={(users) => (
