@@ -1,0 +1,18 @@
+.host {
+  margin-bottom: 0 default;
+  height: 100%;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  --spacing: 0rem;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+span.heart {
+  color: var(--del-color);
+}
