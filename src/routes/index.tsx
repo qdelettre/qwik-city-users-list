@@ -4,7 +4,9 @@ import { DocumentHead, Link } from "@builder.io/qwik-city";
 export default component$(() => {
   return (
     <div>
-      <Link href="/user-list">User list</Link>
+      <Link href="/user-list" prefetch={true}>
+        User list
+      </Link>
     </div>
   );
 });

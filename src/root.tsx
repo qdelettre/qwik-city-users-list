@@ -21,6 +21,10 @@ export default component$(() => {
     <QwikCity>
       <head>
         <meta charSet="utf-8" />
+        <meta
+          name="description"
+          content="A simple user list made with Qwik & PicoCss"
+        />
         <link rel="manifest" href="/manifest.json" />
         <RouterHead />
       </head>
