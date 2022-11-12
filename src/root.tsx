@@ -1,8 +1,12 @@
-import { component$, useStyles$ } from '@builder.io/qwik';
-import { QwikCity, RouterOutlet, ServiceWorkerRegister } from '@builder.io/qwik-city';
-import { RouterHead } from './components/router-head/router-head';
+import { component$, useStyles$ } from "@builder.io/qwik";
+import {
+  QwikCity,
+  RouterOutlet,
+  ServiceWorkerRegister,
+} from "@builder.io/qwik-city";
+import { RouterHead } from "./components/router-head/router-head";
 
-import globalStyles from './global.css?inline';
+import globalStyles from "./global.scss?inline";
 
 export default component$(() => {
   /**
@@ -17,6 +21,10 @@ export default component$(() => {
     <QwikCity>
       <head>
         <meta charSet="utf-8" />
+        <meta
+          name="description"
+          content="A simple user list made with Qwik & PicoCss"
+        />
         <link rel="manifest" href="/manifest.json" />
         <RouterHead />
       </head>

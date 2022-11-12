@@ -1,20 +1,18 @@
-import { component$, Slot } from '@builder.io/qwik';
-import Header from '../components/header/header';
+import { component$, Slot, useStylesScoped$ } from "@builder.io/qwik";
+import { Footer } from "~/components/footer/footer";
+import styles from "./layout.css?inline";
 
 export default component$(() => {
+  useStylesScoped$(styles);
+
   return (
     <>
-      <main>
-        <Header />
+      <main class="container">
         <section>
           <Slot />
         </section>
       </main>
-      <footer>
-        <a href="https://www.builder.io/" target="_blank">
-          Made with ♡ by Builder.io
-        </a>
-      </footer>
+      <Footer />
     </>
   );
 });
