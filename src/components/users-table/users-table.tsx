@@ -1,5 +1,4 @@
 import { component$ } from "@builder.io/qwik";
-import { Link } from "@builder.io/qwik-city";
 import { IUser } from "~/models/user";
 
 export interface UsersTableProps {
@@ -21,12 +20,12 @@ export const UsersTable = component$<UsersTableProps>(({ users }) => {
         {users.map((user) => (
           <tr>
             <td scope="row">
-              <Link
+              <a
                 href={`/user-list/${user.id}`}
                 data-tooltip={`Show user ${user.id}`}
               >
                 {user.id}
-              </Link>
+              </a>
             </td>
             <td>{user.name}</td>
             <td>{user.username}</td>

@@ -1,7 +1,6 @@
 import { component$, Resource } from "@builder.io/qwik";
 import {
   DocumentHead,
-  Link,
   RequestHandler,
   useEndpoint,
 } from "@builder.io/qwik-city";
@@ -20,9 +19,9 @@ export default component$(() => {
 
   return (
     <>
-      <Link href="/user-list" data-tooltip="Return to list">
+      <a href="/user-list" data-tooltip="Return to list">
         return to list
-      </Link>
+      </a>
 
       <Resource
         value={userRessource}
