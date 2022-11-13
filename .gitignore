@@ -3,6 +3,7 @@
 /lib
 /lib-types
 /server
+/coverage
 
 # Development
 node_modules
