@@ -34,7 +34,7 @@
     "netlify-cli": "12.1.1",
     "node-fetch": "3.3.0",
     "prettier": "2.7.1",
-    "sass": "1.56.1",
+    "sass": "1.56.2",
     "typescript": "4.8.4",
     "vite": "4.0.0",
     "vite-tsconfig-paths": "3.5.2"
