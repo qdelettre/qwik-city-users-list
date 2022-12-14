@@ -22,7 +22,7 @@
     "qwik": "qwik"
   },
   "devDependencies": {
-    "@builder.io/qwik": "0.13.3",
+    "@builder.io/qwik": "0.15.2",
     "@builder.io/qwik-city": "0.0.122",
     "@netlify/vite-plugin-netlify-edge": "1.1.1",
     "@types/eslint": "8.4.10",
