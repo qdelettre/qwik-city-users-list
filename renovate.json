@@ -5,5 +5,13 @@
   ],
   "timezone": "Europe/Paris",
   "schedule": ["before 8am", "after 10pm"],
-  "stabilityDays": 1
+  "stabilityDays": 1,
+  "packageRules": [
+    {
+      "groupName": "qwik",
+      "matchPackagePrefixes": [
+        "@builder.io/"
+      ]
+    }
+  ]
 }
