@@ -30,7 +30,7 @@
     "@typescript-eslint/eslint-plugin": "5.42.1",
     "@typescript-eslint/parser": "5.42.1",
     "eslint": "8.29.0",
-    "eslint-plugin-qwik": "0.13.3",
+    "eslint-plugin-qwik": "0.20.0",
     "netlify-cli": "12.13.1",
     "node-fetch": "3.3.0",
     "prettier": "2.7.1",
