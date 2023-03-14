@@ -1,21 +1,17 @@
 import { component$, Resource } from "@builder.io/qwik";
-import {
-  DocumentHead,
-  RequestHandler,
-  useEndpoint,
-} from "@builder.io/qwik-city";
+import { DocumentHead, routeLoader$ } from "@builder.io/qwik-city";
 import { User } from "~/components/user/user";
 import { IUser } from "~/models/user";
 
-export const onGet: RequestHandler<IUser> = async ({ params }) => {
+export const useUserLoader = routeLoader$<IUser>(async ({ params }) => {
   const response = await fetch(
     `https://jsonplaceholder.typicode.com/users/${params.userId}`
   );
   return await response.json();
-};
+});
 
 export default component$(() => {
-  const userRessource = useEndpoint<IUser>();
+  const userRessource = useUserLoader();
 
   return (
     <>

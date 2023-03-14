@@ -4,9 +4,7 @@ import { DocumentHead } from "@builder.io/qwik-city";
 export default component$(() => {
   return (
     <div>
-      <a href="/user-list">
-        User list
-      </a>
+      <a href="/user-list">User list</a>
     </div>
   );
 });
