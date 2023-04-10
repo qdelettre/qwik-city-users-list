@@ -40,6 +40,6 @@
     "vite-tsconfig-paths": "4.0.7"
   },
   "dependencies": {
-    "@picocss/pico": "1.5.7"
+    "@picocss/pico": "1.5.8"
   }
 }
