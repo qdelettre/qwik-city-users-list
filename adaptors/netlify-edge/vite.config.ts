@@ -1,20 +1,10 @@
-import { netifyEdgeAdaptor } from "@builder.io/qwik-city/adaptors/netlify-edge/vite";
-import { extendConfig } from "@builder.io/qwik-city/vite";
-import baseConfig from "../../vite.config";
+import { defineConfig } from "vite";
+import { qwikVite } from "@builder.io/qwik/optimizer";
+import { qwikCity } from "@builder.io/qwik-city/vite";
+import tsconfigPaths from "vite-tsconfig-paths";
 
-export default extendConfig(baseConfig, () => {
+export default defineConfig(() => {
   return {
-    build: {
-      ssr: true,
-      rollupOptions: {
-        input: ["src/entry.netlify-edge.tsx", "@qwik-city-plan"],
-      },
-      outDir: ".netlify/edge-functions/entry.netlify-edge",
-    },
-    plugins: [
-      netifyEdgeAdaptor({
-        staticGenerate: true,
-      }),
-    ],
+    plugins: [qwikCity(), qwikVite({}), tsconfigPaths()],
   };
 });
