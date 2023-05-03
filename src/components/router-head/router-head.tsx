@@ -12,20 +12,20 @@ export const RouterHead = component$(() => {
     <>
       <title>{head.title}</title>
 
-      <link rel="canonical" href={loc.href} />
+      <link rel="canonical" href={loc.url.href} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-      {head.meta.map((m) => (
-        <meta {...m} />
+      {head.meta.map((m, key) => (
+        <meta key={key} {...m} />
       ))}
 
-      {head.links.map((l) => (
-        <link {...l} />
+      {head.links.map((l, key) => (
+        <link key={key} {...l} />
       ))}
 
-      {head.styles.map((s) => (
-        <style {...s.props} dangerouslySetInnerHTML={s.style} />
+      {head.styles.map((s, key) => (
+        <style key={key} {...s.props} dangerouslySetInnerHTML={s.style} />
       ))}
     </>
   );
