@@ -7,7 +7,7 @@
   "packageRules": [
     {
       "groupName": "qwik",
-      "matchPackagePrefixes": ["@builder.io/"]
+      "matchPackagePrefixes": ["@builder.io/", "eslint-plugin-qwik"]
     }
   ]
 }
