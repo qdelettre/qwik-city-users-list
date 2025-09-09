@@ -39,7 +39,7 @@
     "prettier": "2.8.8",
     "sass": "1.92.1",
     "typescript": "5.9.2",
-    "vite": "7.1.4",
+    "vite": "7.1.5",
     "vite-tsconfig-paths": "5.1.4"
   },
   "dependencies": {
